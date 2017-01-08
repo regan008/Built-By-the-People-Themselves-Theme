@@ -1,0 +1,79 @@
+/*#ap_trail_navigation, .top-bar, .top-bar ul, .top-bar-left, .top-bar-right, .menu {
+  background-color: rgba(64,79,60,.5);
+}*/
+#home, body {
+  background-image: url(../images/SpoonGraphics-Topographic-Map-6-2.png);
+  border-top: 5px solid #5d4e48;
+}
+#main-body {
+  background: #8E9089;
+}
+#primary {
+  background: #fbfcf9;
+  padding: 35px 50px 35px 50px;
+}
+#homepage-image {
+  width: auto;
+  height: auto;
+
+}
+
+
+
+
+
+#site-title a{
+  color: #4b3a36 !important;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-top: 15px;
+}
+
+p {
+  color: #1b1715;
+}
+a {
+  color: #4f5449;
+}
+a:hover {
+  color: #9a9e97;
+}
+h2 a {
+  color: #585e52
+}
+h1,h2,h3,h4,h5,h6 {
+  color: #7E625B;
+}
+.top-bar, .top-bar ul {
+  background: transparent;
+}
+
+.top-bar, .top-bar li a {
+  text-transform: uppercase;
+  color: #585e52;
+  font-weight: bold;
+  font-size: 105%;
+  letter-spacing: 2px;
+  font-family: "Oswald";
+  font-weight: 400;
+}
+.top-bar li a:hover {
+  border-bottom: 3px solid #464b41;
+  color: #464b41;
+}
+.top-bar {
+  padding-left: 0;
+}
+#ap_trail_navigation {
+  padding-left: 0;
+}
+h2{
+  letter-spacing: 1px;
+}
+h3, h4, h5, h6 {
+  font-weight: 300;
+}
+.pagination a, .pagination button {
+  color: #585e52 !important;
+  font-weight: 400;
+}
