@@ -10,11 +10,7 @@ echo head(array(
 ));
 ?>
 <div class="row">
-  <div class="large-4 medium-4 columns">
-    <span class="hide-for-small-only">
-    <img id="homepage-image" src="http://appalachiantrailhistory.org/files/original/bddd5d4ef565430f5ad7ee4967c40a3c.jpg">
-  </span>
-  </div>
+
 <div class="large-8 medium-8 small-12 columns">
 
     <?php

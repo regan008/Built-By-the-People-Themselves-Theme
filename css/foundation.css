@@ -14,7 +14,8 @@
      * 3. Prevent adjustments of font size after orientation changes in
      *    IE on Windows Phone and in iOS.
      */
-@import url('https://fonts.googleapis.com/css?family=Enriqueta|Oswald:300,400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Prata|Fira+Sans+Extra+Condensed:300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Oxygen|Rufina');
 html {
   font-family: sans-serif;
   /* 1 */
@@ -439,7 +440,7 @@ body {
   margin: 0;
   padding: 0;
   background: #fefefe;
-  font-family: "Enriqueta", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Oxygen", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -1304,9 +1305,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Oswald", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Fira Sans Extra Condensed", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   color: inherit;
   text-rendering: optimizeLegibility; }
   h1 small,

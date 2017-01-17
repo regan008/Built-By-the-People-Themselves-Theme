@@ -82,58 +82,29 @@ fire_plugin_hook('public_body', array(
 fire_plugin_hook('public_header');
 ?>
 		</header>
-<div class="row">
-			<div class="large-12 medium-12 columns tinted-image">
-				<h1 id="site-title"><?php
+<!-- <div class="row"> -->
+<div class="top-bar">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+				<li id="menu-text"><?php
 echo link_to_home_page(theme_logo());
-?></h1>
-			</div>
-		</div>
-		<div class="row">
-			<div class="large-12 medium-12 columns" id="ap_trail_navigation">
-				<div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-  <button class="menu-icon" type="button" data-toggle="example-menu"></button>
-  <div class="title-bar-title">Menu</div>
+?></li>
+</ul>
 </div>
-		<div id="top-bar-border">
-		<div class="top-bar" id="example-menu">
-
-
-				<div id="responsive-menu">
-					<div class="top-bar-left">
-
-								        <!-- Left Nav Section -->
+<div class="top-bar-right">
 
 
 				        <?php
 echo public_nav_main()->setUlClass('menu data-dropdown-menu vertical medium-horizontal');
 ?>
-
-
-
-
-
+</div>
 </div>
 
-<div class="top-bar-right">
-			<ul class="menu">
-			 <li><?php
-//echo link_to_item_search('More Search Options');
-?></li>
 
-		  <li><?php
-//echo search_form(array(
-    //'show_advanced' => false
-//));
-?></li>
 
-</ul>
- </div>
- </div>
- </div>
- </div>
-</div>
- </div>
-	<div class="row" id="main-body">
 
-		<div class="large-12 small-12 columns" id="primary">
+
+
+	<div class="expanded row" id="main-body">
+
+		<!-- <div class="large-12 small-12 columns" id="primary"> -->
