@@ -10,7 +10,9 @@ echo head(array(
 ));
 ?>
 <div class="row">
-
+<div class="large-4 small-12 columns">
+<img src="http://localhost:8888/BBPT/files/original/3575c8a2c341237fcea2ca43af2b20f5.jpg">
+</div>
 <div class="large-8 medium-8 small-12 columns">
 
     <?php

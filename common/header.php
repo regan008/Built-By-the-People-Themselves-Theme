@@ -105,6 +105,6 @@ echo public_nav_main()->setUlClass('menu data-dropdown-menu vertical medium-hori
 
 
 
-	<div class="expanded row" id="main-body">
+	<div class="row" id="main-body">
 
-		<!-- <div class="large-12 small-12 columns" id="primary"> -->
+		<div class="large-12 small-12 columns" id="primary">

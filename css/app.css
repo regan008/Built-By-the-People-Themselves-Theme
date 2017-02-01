@@ -11,7 +11,8 @@
 }
 
 #main-body {
-  background: #8E9089;
+
+
 }
 #footer {
   /*background: #fbfcf9;*/
@@ -19,7 +20,7 @@
   padding: 0px 50px 15px 50px;
 }
 #primary {
-  background: #fbfcf9;
+  background-color: rgba(242,242,242, .60);
   padding: 35px 50px 35px 50px;
 }
 #homepage-image {
@@ -50,12 +51,14 @@ a {
 a:hover {
   color: #464b41;
 }
-h2 a {
-  color: #0d370d;
-}
+
 h1,h2,h3,h4,h5,h6 {
-  color: #a31c21;
+  color: #3d6098;
 }
+h1, h2, h3 {
+  font-weight: 500;
+}
+
 .menu li a {
   text-transform: lowercase;
 }
@@ -214,17 +217,17 @@ figcaption > small > hr {
   margin-top: 10px;
 }
 h4 > i{
-color: #58443f;
+color: #213159;
 }
 h4,h5 {
-  color: #58443f;
+  color: #3d6098;
 }
 .pagination .current {
   background: #114511 !important;
   color: #fefefe;
 }
 h1 small {
-  color: #7E625B;
+  color: #3d6098;
 }
 
 #geolocation {
