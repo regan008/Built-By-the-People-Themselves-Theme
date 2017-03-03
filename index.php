@@ -47,7 +47,7 @@ echo head(array(
 <div class="row" data-equalizer>
   <div class="large-6 columns" >
     <div class="row">
-  <div id="featured-question" class="featured large-6 columns" data-equalizer-watch style="background-image:url('<?php echo file_display_url($featuredExhibitImage, 'thumbnail'); ?>')">
+  <div id="featured-question" class="featured large-6 columns" data-equalizer-watch style="background-image:url('<?php echo file_display_url($featuredExhibitImage, 'fullsize'); ?>')">
       <h3 class="feat-exhibit-title text-center">
           <?php echo $featuredExhibit->title; ?>
       </h3>
@@ -70,7 +70,7 @@ echo head(array(
 
   <div class="large-6 columns" >
   <div class="row">
-    <div id="featured-question" class="featured large-6 columns"  data-equalizer-watch style="background-image:url('<?php echo file_display_url($featuredPersonFile, 'fullsize'); ?>')">
+    <div id="featured-question" class="featured large-6 columns"  data-equalizer-watch style="background-image:url('<?php echo file_display_url($featuredPersonFile, 'thumbnail'); ?>')">
       <h3 class="feat-exhibit-title text-center">
           <?php echo metadata($featuredPerson, array('Dublin Core', 'Title')); ?>
       </h3>
