@@ -42,22 +42,22 @@ echo head(array(
 
   <?php $featuredExhibit = exhibit_builder_random_featured_exhibit(); ?>
   <?php $featuredExhibitId = $featuredExhibit->id; ?>
-  <?php $featuredExhibitItem = get_records('Item', array('exhibit' => $featuredExhibitID, 'random' => true, 'has files' => true), 1); ?>
+  <?php $featuredExhibitItem = get_records('Item', array('exhibit' => $featuredExhibitId, 'random' => true, 'has files' => true), 1); ?>
   <?php $featuredExhibitImage = get_db()->getTable('File')->findWithImages($featuredExhibitItem[0]->id, 0); ?>
 <div class="row" data-equalizer>
-  <!-- <div class="large-6 columns" >
+  <div class="large-6 columns" >
     <div class="row">
-  <div id="featured-question" class="featured large-6 columns" data-equalizer-watch style="background-image:url('<?php //echo file_display_url($featuredExhibitImage, 'fullsize'); ?>')">
+  <div id="featured-question" class="featured large-6 columns" data-equalizer-watch style="background-image:url('<?php echo file_display_url($featuredExhibitImage, 'fullsize'); ?>')">
       <h3 class="feat-exhibit-title text-center">
-          <?php //echo $featuredExhibit->title; ?>
+          <?php echo $featuredExhibit->title; ?>
       </h3>
     </div>
     <div class="large-6 columns" data-equalizer-watch>
-      <p><?php //echo snippet($featuredExhibit->description, 0, 200); ?></p>
-      <p class="jump-link"><?php //echo exhibit_builder_link_to_exhibit($featuredExhibit, 'Read More', array('class' => 'button')); ?></p>
+      <p><?php echo snippet($featuredExhibit->description, 0, 200); ?></p>
+      <p class="jump-link"><?php echo exhibit_builder_link_to_exhibit($featuredExhibit, 'Read More', array('class' => 'button')); ?></p>
     </div>
   </div>
-</div> -->
+</div>
 <?php $featuredPeople = get_records('Item', array(
              'featured' => 1,
              'sort_field' => 'random',
