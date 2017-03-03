@@ -45,7 +45,7 @@ echo head(array(
   <?php $featuredExhibitItem = get_records('Item', array('exhibit' => $featuredExhibitID, 'random' => true, 'has files' => true), 1); ?>
   <?php $featuredExhibitImage = get_db()->getTable('File')->findWithImages($featuredExhibitItem[0]->id, 0); ?>
 <div class="row" data-equalizer>
-  <div class="large-6 columns" >
+  <!-- <div class="large-6 columns" >
     <div class="row">
   <div id="featured-question" class="featured large-6 columns" data-equalizer-watch style="background-image:url('<?php echo file_display_url($featuredExhibitImage, 'fullsize'); ?>')">
       <h3 class="feat-exhibit-title text-center">
@@ -57,7 +57,7 @@ echo head(array(
       <p class="jump-link"><?php echo exhibit_builder_link_to_exhibit($featuredExhibit, 'Read More', array('class' => 'button')); ?></p>
     </div>
   </div>
-</div>
+</div> -->
 <?php $featuredPeople = get_records('Item', array(
              'featured' => 1,
              'sort_field' => 'random',
