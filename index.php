@@ -41,8 +41,8 @@ echo head(array(
 
 
   <?php $featuredExhibit = exhibit_builder_random_featured_exhibit(); ?>
-  <?php $featuredExhibitId = 1; ?>
-  <?php $featuredExhibitItem = get_records('Item', array('exhibit' => 1, 'random' => true, 'has files' => true), 1); ?>
+  <?php $featuredExhibitId = $featuredExhibit->id; ?>
+  <?php $featuredExhibitItem = get_records('Item', array('exhibit' => $featuredExhibitID, 'random' => true, 'has files' => true), 1); ?>
   <?php $featuredExhibitImage = get_db()->getTable('File')->findWithImages($featuredExhibitItem[0]->id, 0); ?>
 <div class="row" data-equalizer>
   <div class="large-6 columns" >
