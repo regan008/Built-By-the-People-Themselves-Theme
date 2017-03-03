@@ -3,20 +3,6 @@
     'bodyclass' => 'items show',
 )); ?>
 
-<div class="row">
-
-<div class="large-12 columns">
-
-      <ul class="pagination" role="navigation" aria-label="Pagination">
-        <div class="medium-2 columns" >
-          <li style="float: left;" class="pagination-previous"><?php echo link_to_previous_item_show(); ?></li>
-        </div>
-          <div class="medium-2 columns" >
-          <li style="float:right;" id="pagination-next"><?php echo link_to_next_item_show(); ?></li>
-        </div>
-      </ul>
-</div>
-</div>
 
 <div class="row">
   <div class="large-12 columns">
@@ -25,7 +11,7 @@
 </div>
 
 <div class="row">
-    <div class="large-6 columns">
+    <div class="large-7 columns">
       <div class="row">
         <div class="large-12 columns">
           <h4>Description:</h4>
@@ -51,7 +37,7 @@
                     <div class="row">
                         <div class="large-4 columns">
                         <!-- Item Date Information -->
-                            <h4><i class="fa fa-calendar fa-lg"></i> Date: </h5>
+                            <h4><i class="fa fa-calendar"></i> Date: </h5>
                             <?php if ($itemDate = metadata($item,array('Dublin Core','Date'))): // TODO: create a date format function...?>
                                 <div><?php echo $itemDate; ?></div>
                             <?php else: ?>
@@ -60,7 +46,7 @@
                         </div>
                         <div class="large-4 columns">
                         <!-- Item Creator Information -->
-                            <h4><i class="fa fa-user fa-lg"></i> Creator: </h4>
+                            <h4><i class="fa fa-user"></i> Creator: </h4>
                             <div>
                             <?php if ($itemCreator = metadata($item,array('Dublin Core','Creator'))): ?>
                                 <?php echo $itemCreator; ?>
@@ -71,7 +57,7 @@
                         </div>
                         <div class="large-4 columns">
                         <!-- Item Recipient Information (if available) -->
-                          <h4><i class="fa fa-archive fa-lg"></i> Source: </h4>
+                          <h4><i class="fa fa-archive"></i> Source: </h4>
                             <div>
                             <?php if ($itemCreator = metadata($item,array('Dublin Core','Source'))): ?>
                                 <?php echo $itemCreator; ?>
@@ -85,7 +71,7 @@
                     <div class="row"><hr />
                         <!-- Subject -->
                         <div class="large-4 columns">
-                             <h4><i class="fa fa-book fa-lg"></i><?php echo __(' Subject'); ?></h4>
+                             <h4><i class="fa fa-book"></i><?php echo __(' Subject'); ?></h4>
                             <?php if ($itemCreator = metadata($item,array('Dublin Core','Subject'))): ?>
                                 <?php echo $itemCreator; ?>
                             <?php else: ?>
@@ -94,7 +80,7 @@
                         </div>
                         <!-- Identifier -->
                         <div class="large-4 columns">
-                            <h4><i class="fa fa-bookmark fa-lg"></i><?php echo __(' Identifier'); ?></h4>
+                            <h4><i class="fa fa-bookmark"></i><?php echo __(' Identifier'); ?></h4>
                             <?php if ($itemCreator = metadata($item,array('Dublin Core','Identifier'))): ?>
                                 <?php echo $itemCreator; ?>
                             <?php else: ?>
@@ -103,7 +89,7 @@
                         </div>
                         <!-- Contributor -->
                         <div class="large-4 columns">
-                            <h4><i class="fa fa-university fa-lg"></i><?php echo __(' Contributor'); ?></h4>
+                            <h4><i class="fa fa-university"></i><?php echo __(' Contributor'); ?></h4>
                             <?php if ($itemCreator = metadata($item,array('Dublin Core','Contributor'))): ?>
                                 <?php echo $itemCreator; ?>
                             <?php else: ?>
@@ -120,7 +106,7 @@
 
                         <div class="large-12 columns">
                                             <hr />
-                            <h4><i class="fa fa-tags fa-large"></i> Tags</h4>
+                            <h4><i class="fa fa-tags"></i> Tags</h4>
                             <div class="tags well well-small">
                                 <?php  echo tag_string($item); ?>
 
@@ -132,7 +118,7 @@
                     <div class="row">
                         <!-- Rights -->
                             <div class="large-12 columns"><hr />
-                                <h4><i class="fa fa-copyright fa-lg"></i><?php echo __(' Rights'); ?></h4>
+                                <h4><i class="fa fa-copyright"></i><?php echo __(' Rights'); ?></h4>
                                 <?php if ($itemCreator = metadata($item,array('Dublin Core','Rights'))): ?>
                                     <?php echo $itemCreator; ?>
                                 <?php else: ?>
@@ -145,7 +131,7 @@
                         <div class="large-12 columns">
                             <hr />
                             <!-- The following prints a citation for this item. -->
-                            <h4><i class="fa fa-retweet fa-lg"></i> <?php echo __('Citation'); ?></h4>
+                            <h4><i class="fa fa-retweet"></i> <?php echo __('Citation'); ?></h4>
                             <div class="element-text"><?php echo metadata($item,'citation',array('no_escape' => true)); ?></div>
                         </div>
                     </div>
@@ -156,14 +142,33 @@
                     </div>
                 </div>
                 <!-- The following returns all of the files associated with an item. -->
-                <div id="itemfiles" class="large-6 columns">
+                <div id="itemfiles" class="large-5 columns">
                     <!-- <h3><?php echo __('Files'); ?></h3> -->
 
+                    <div class="element-text">
+                        <?php echo files_for_item(
+                            array(
+                                'linkToFile' => false,
+                                'imageSize' => 'fullsize',
+                                'imgAttributes' => array('class' => 'float-center'),
+                                'linkToFile' => true
+                            )
+                        ); ?>
+                    </div>
 
-                    <div class="element-text"><?php echo files_for_item(
-                        array('imageSize'=>'fullsize','linkToFile'=>true,'linkToMetadata'=>false),//options
-                        array('class'=>'file-image'),
-                        null);
-                ?></div>
                 </div>
+            </div>
+            <div class="row">
+
+            <div class="large-12 columns">
+
+                  <ul class="pagination" role="navigation" aria-label="Pagination">
+                    <div class="medium-2 columns" >
+                      <li style="float: left;" class="pagination-previous"><?php echo link_to_previous_item_show(); ?></li>
+                    </div>
+                      <div class="medium-2 columns" >
+                      <li style="float:right;" id="pagination-next"><?php echo link_to_next_item_show(); ?></li>
+                    </div>
+                  </ul>
+            </div>
             </div>

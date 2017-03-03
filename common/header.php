@@ -33,7 +33,7 @@ fire_plugin_hook('public_head', array(
 ?>
 
   <!-- Stylesheets -->
-
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <?php
 queue_css_url('http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic');
 queue_css_file('foundation');

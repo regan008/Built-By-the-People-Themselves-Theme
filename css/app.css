@@ -14,6 +14,17 @@
 
 
 }
+.row {
+  margin-bottom: 25px;
+}
+.homepage-map {
+  margin: 15px;
+}
+.feat-exhibit-title {
+  color: #fff !important;
+  font-weight: 500;
+  text-shadow: 1px 1px black !important;
+}
 #footer {
   /*background: #fbfcf9;*/
   margin-top: 25px;
@@ -32,10 +43,10 @@
 
 #menu-text a{
 
-  text-transform: lowercase;
+  /*text-transform: lowercase;*/
   color: #213159 !important;
   letter-spacing: 1px;
-  font-size: 1.9rem;
+  font-size: 2.2rem;
   font-weight: 900;
   font-family: "Lato" !important;
 }
@@ -49,7 +60,7 @@ a {
   color: #262626;
 }
 a:hover {
-  color: #464b41;
+  color: #213159;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -110,11 +121,11 @@ h3, h4, h5, h6 {
   font-weight: 300;
 }
 .pagination a, .pagination button {
-  color: #114511 !important;
+  color: #1779ba !important;
   font-weight: 400;
 }
 .pagination, a:hover{
-  color: #145314;
+  color: #213159;
 }
 #pagination-next:hover {
   background: transparent !important;
@@ -164,9 +175,8 @@ h3, h4, h5, h6 {
 }
 
 .exhibit-title {
-  font-family: Oswald;
+  font-family: Lato;
   border-bottom: solid 2px #114511;
-  text-transform: uppercase;
 }
 .exhibit-nav-level-2 > li:hover {
   background-color: #eee;
@@ -191,9 +201,13 @@ h1 > .exhibit-page {
   border-bottom-right-radius: 5px;
   margin: 5px 0 5px 0;
 }
+.file-image  {
+
+
+}
 
 .exhibit-nav-level-1 > li:hover {
-  background-color: #E0E1CC;
+  background-color: #9eafcb;
 }
 #exhibit-pages {
   border-left: solid 1px #eee;
@@ -223,7 +237,7 @@ h4,h5 {
   color: #3d6098;
 }
 .pagination .current {
-  background: #114511 !important;
+  background: #213159 !important;
   color: #fefefe;
 }
 h1 small {
