@@ -54,7 +54,7 @@ echo head(array(
     </div>
     <div class="large-6 columns" data-equalizer-watch>
       <p><?php echo snippet($featuredExhibit->description, 0, 200); ?></p>
-      <p class="jump-link"><?php echo exhibit_builder_link_to_exhibit($featuredExhibit, 'Read More', array('class' => 'button')); ?></p>
+      <p class="jump-link"><?php //echo exhibit_builder_link_to_exhibit($featuredExhibit, 'Read More', array('class' => 'button')); ?></p>
     </div>
   </div>
 </div>
