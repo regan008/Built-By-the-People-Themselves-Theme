@@ -47,14 +47,14 @@ echo head(array(
 <div class="row" data-equalizer>
   <div class="large-6 columns" >
     <div class="row">
-  <div id="featured-question" class="featured large-6 columns" data-equalizer-watch style="background-image:url('<?php echo file_display_url($featuredExhibitImage, 'fullsize'); ?>')">
+  <div id="featured-question" class="featured large-6 columns" data-equalizer-watch style="background-image:url('<?php echo file_display_url($featuredExhibitImage, 'thumbnail'); ?>')">
       <h3 class="feat-exhibit-title text-center">
           <?php echo $featuredExhibit->title; ?>
       </h3>
     </div>
     <div class="large-6 columns" data-equalizer-watch>
       <p><?php echo snippet($featuredExhibit->description, 0, 200); ?></p>
-      <p class="jump-link"><?php //echo exhibit_builder_link_to_exhibit($featuredExhibit, 'Read More', array('class' => 'button')); ?></p>
+      <p class="jump-link"><?php echo exhibit_builder_link_to_exhibit($featuredExhibit, 'Read More', array('class' => 'button')); ?></p>
     </div>
   </div>
 </div>
