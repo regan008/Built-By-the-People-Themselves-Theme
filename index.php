@@ -32,7 +32,7 @@ echo head(array(
 </div>
 
 <div class="large-4 columns">
-<img height=200 src="http://localhost:8888/BBPT/files/original/aa690c3769514d1958bfe42b014cad79.jpg">
+<img height=200 src="http://lindseybestebreurtje.org/arlingtonhistory/themes/Built-By-the-People-Themselves-Theme/images/arlingtonbricks.jpg">
 </div>
 </div>
 
